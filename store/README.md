@@ -9,3 +9,6 @@ https://nuxtjs.org/guide/vuex-store
 
 **This directory is not required, you can delete it if you don't want to use it.**
 
+ここには Vuexストアとそのモジュールのファイルを配置する。
+ここに配置されたストア及びモジュールは、Nuxt のストアオートローディングの対象となり、
+ファイルを作成するだけでそのモジュールをグローバルで利用可能となる。
