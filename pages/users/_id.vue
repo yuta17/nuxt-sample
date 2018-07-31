@@ -1,16 +1,18 @@
 <template>
   <div>
-    <h1>{{ id }}</h1>
+    <h1>{{user.name}}</h1>
+    <img :src='user.avatar_url'>
   </div>
 </template>
 
 <script>
 export default {
-  asyncData ({ params }) {
-    const id = params;
-    return {
-      id
-    }
+  async asyncData ({ params, app }) {
+    const { id } = params;
+    const user = await app.$axios.$get(
+      `https://api.github.com/users/${id}`
+    )
+    return { user }
   }
 }
 </script>
