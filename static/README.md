@@ -10,3 +10,7 @@ https://nuxtjs.org/guide/assets#static
 
 **This directory is not required, you can delete it if you don't want to use it.**
 
+公開用の静的リソースを配置する場所。
+
+このディレクトリではwebpack によるファイル名のハッシュ化の影響を受けないため、
+OGP 画像や、apple‐touch‐iconなどの固定の名前を用意したい静的リソースはここに配置する。
